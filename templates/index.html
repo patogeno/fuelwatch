@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" type='text/javascript'></script>
+    <script defer src="{{ url_for('static', filename='js/main.js')}}" type="text/javascript"></script>
     <title>Fuel Prices</title>
 </head>
 <body>
+    <div class="suburbs">
+        <h2>Select a suburb:</h2>
+        <select id="suburbs_select">
+            {% for s in suburbs %}
+                <option value="/{{s}}" {% if s == suburb %}selected{% endif %}>
+                    {{s}}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
     <h1>Fuel Prices in {{suburb}}</h1>
     <table>
         <tr>
