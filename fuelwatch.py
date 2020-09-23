@@ -22,5 +22,5 @@ def per_suburb(suburb):
     stations = getStations(sub)
     return render_template('index.html', stations=stations, suburb=sub, suburbs=suburbs)
 
-#if __name__ == "__main__":
-#    app.run()
+if __name__ == "__main__":
+    app.run()
