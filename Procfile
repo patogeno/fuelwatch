@@ -1,1 +1,1 @@
-web: gunicorn fuelwatch:app
+web: gunicorn fuelwatch:app --preload
