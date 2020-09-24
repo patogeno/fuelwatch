@@ -9,15 +9,26 @@
     <title>Fuel Prices</title>
 </head>
 <body>
-    <div class="suburbs">
-        <h2>Select a suburb:</h2>
-        <select id="suburbs_select">
-            {% for s in suburbs %}
-                <option value="/{{s}}" {% if s == suburb %}selected{% endif %}>
-                    {{s}}
-                </option>
-            {% endfor %}
-        </select>
+    <div class="stationsForm">
+        <form name="stationForm">
+            <label for="suburbsSelect">Suburb:</label>
+            <select id="suburbsSelect" name="suburbsSelect">
+                {% for s in suburbs %}
+                    <option value="{{s}}" {% if s == suburb %}selected{% endif %}>
+                        {{s}}
+                    </option>
+                {% endfor %}
+            </select>
+            <label for="productsSelect">Product:</label>
+            <select id="productsSelect" name="productsSelect">
+                {% for p in products %}
+                    <option value="{{p.id}}" {% if p.id == productId %}selected{% endif %}>
+                        {{p.name}}
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <h1>Fuel Prices in {{suburb}}</h1>
     <table>

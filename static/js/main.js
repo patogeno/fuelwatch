@@ -1,9 +1,11 @@
 $(function() {
-    $('#suburbs_select').on('change', function() {
-        var url = $(this).val(); // get selected value
-        if (url) { // require a URL
-            window.location = url; // redirect
-        }
-        return false;
+
+    $(".stationsForm form").submit(function(event){
+        event.preventDefault();
+        var suburb = document.forms['stationForm']['suburbsSelect'].value;
+        var productId = document.forms['stationForm']['productsSelect'].value;
+        var url = '/' + suburb + '/' + productId;
+        window.open(url,"_self");
     });
+    
 });
