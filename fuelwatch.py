@@ -35,4 +35,4 @@ def per_suburb(suburb, productid):
     return render_template('index.html', stations=stations, suburb=sub, suburbs=suburbs, productId=productid, products=products)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
