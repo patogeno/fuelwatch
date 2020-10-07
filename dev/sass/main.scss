@@ -1,0 +1,174 @@
+@import 'bulma';
+
+/* HEADER */
+header {
+    background-color: $blue;
+    $main-padding: 2rem;
+    $touch-padding-updown: .5rem;
+    $touch-padding-sides: 4vw;
+
+    .brand {
+        padding: $main-padding;
+
+        @include touch {
+            padding: $touch-padding-updown*3 $touch-padding-sides;
+            font-size: 2rem;
+        }
+
+        @include mobile {
+            padding-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    form {
+        padding: $main-padding;
+        align-items: flex-end;
+
+        @include touch {
+            padding: $touch-padding-updown $touch-padding-sides;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select {
+            font-size: 1rem;
+            border: 3px solid $success;
+            border-radius: 10px;
+            padding: 0.2rem 0.7rem;
+            color: $info;
+        }
+
+        input[type="submit"] {
+            font-size: 1rem;
+            font-weight: bold;
+            border: 3px solid $success;
+            border-radius: 10px;
+            padding: 0.2rem 0.7rem;
+            color: $info;
+            cursor: pointer;
+        }
+
+        .column {
+            @include mobile {
+                text-align: center;
+            }
+        } 
+    }
+}
+
+/* TABLE LEYEND */
+.tomorrow, .leyend span.tomorrow {
+    background-color: $success;
+}
+
+.yesterday, .leyend span.yesterday {
+    background-color: $info;
+}
+
+.leyend {
+    margin-bottom: 1rem;
+    text-align: right;
+
+    @include touch {
+        margin-right: 1rem;
+    }
+}
+
+.leyend h2 {
+    display: inline-block;
+    color: $info;
+}
+
+.leyend span {
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    background-color: $blue;
+    font-weight: 600;
+    color: $white;
+}
+
+/* TABLE */
+table.table {
+    margin-bottom: 2rem;
+
+    thead {
+        th {
+            color: $info;
+        }
+    }
+    tbody {
+        tr {
+            background-color: $blue;
+
+            &.yesterday {
+                background-color: $info;
+            }
+
+            &.tomorrow {
+                background-color: $success;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+}
+
+/* OLD CSS */
+
+
+// .stationsForm form input {
+//     font-size: 1rem;
+//     font-weight: bold;
+//     border: 3px solid #1b5dbb;
+//     border-radius: 10px;
+//     padding: 0.2rem 0.7rem;
+//     color: #0b2d5d;
+// }
+
+// .stationsForm form div {
+//     padding: 1rem 2rem;
+// }
+
+// .stationsForm form div label {
+//     padding-right: 1rem;
+// }
+
+// main {
+//     padding: 1rem 0;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// body {
+//     font-family: 'Montserrat', sans-serif;
+//     margin: 0;
+// }
+
+// table {
+//     padding: 0.5rem;
+//     border: 3px solid #0b2d5d;
+//     border-radius: 10px;
+//     background-color: #1b5dbb;
+//     color: white;
+// }
+
+// table th {
+//     padding-bottom: 0.4rem;
+//     color: white;
+//     text-align: center;
+// }
+
+// table td {
+//     margin: 0;
+//     padding: 0.3rem 0.8rem;
+// }
+
+

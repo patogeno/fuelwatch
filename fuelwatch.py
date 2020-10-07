@@ -25,7 +25,7 @@ products = [
 def main():
     suburb = random.choice(suburbs)
     stations = getStations(suburb)
-    print(stations[0])
+    #print(stations[0])
     return render_template('index.html', stations=stations, suburb=suburb, suburbs=suburbs, product=1, products=products)
 
 @app.route('/<suburb>/<int:productid>')
@@ -34,5 +34,5 @@ def per_suburb(suburb, productid):
     stations = getStations(sub,productid)
     return render_template('index.html', stations=stations, suburb=sub, suburbs=suburbs, productId=productid, products=products)
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()

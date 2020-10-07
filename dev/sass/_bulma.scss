@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+
+// Set your brand colors
+// $orange: #e2a241;
+// $yellow: #e0cb51;
+// $purple: #151942;
+// $pink: #e46174;
+// $red: #d80b2c;
+$blue: #2985db;
+// $green: #2d8c77;
+$white: #fff;
+// $cyan: #03b8b7;
+// $beige-lighter: #EFF0EB;
+
+
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+$primary: black;
+$link: rgb(255, 240, 28);
+$info: rgb(71, 71, 71);
+$success: #2da09e;
+$warning: rgb(135, 18, 202);
+$danger: rgb(199, 40, 19);
+
+$text: $white;
+$text-strong: $white;
+
+$footer-background-color: $success;
+
+// $scheme-main-bis: rgba($orange,0.2);
+
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../../node_modules/bulma/sass/helpers/typography.sass";
+@import "../../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../../node_modules/bulma/sass/elements/table.sass";

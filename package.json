@@ -1,0 +1,33 @@
+{
+  "name": "fuelwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patogeno/fuelwatch.git"
+  },
+  "keywords": [
+    "python",
+    "gulp",
+    "flask"
+  ],
+  "author": "Patricio Soto Kort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patogeno/fuelwatch/issues"
+  },
+  "homepage": "https://github.com/patogeno/fuelwatch#readme",
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-wait": "0.0.2"
+  }
+}

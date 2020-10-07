@@ -1,0 +1,2 @@
+FLASK_APP=fuelwatch.py
+FLASK_ENV=development
